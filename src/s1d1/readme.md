@@ -82,6 +82,10 @@ Both parts of this puzzle are complete! They provide two gold stars: **
 
 Problem: Edge case like 'threeight' can't be converted into '38'.
 
+### References
+
+1. https://www.reddit.com/r/adventofcode/comments/1884fpl/2023_day_1for_those_who_stuck_on_part_2/
+
 ### Commands-2
 
 1. Replace part of text digits into numerical expression
