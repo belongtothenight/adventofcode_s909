@@ -44,10 +44,49 @@ The first half of this puzzle is complete! It provides one gold star: *
     1. Record macro: ```qa0vypq``` 
     2. Repeat macro across all lines: ```:g/./norm! @a```
 3. Clear lines with multiple numbers: 
-    1. Record macro: ```qa0lv$hhdq``` 
-    2. Repeat macro across lines with length greater than 3: ```:g/^.\{3,}/norm! @a```
+    1. Record macro: ```qb0lv$hhdq``` 
+    2. Repeat macro across lines with length greater than 3: ```:g/^.\{3,}/norm! @b```
 4. Sum every line together: ```:%!awk '{total+=$1}END{print total}'```
 
 ## Question-2
 
+--- Part Two ---
+
+Your calculation isn't quite right. It looks like some of the digits are actually spelled out with letters: one, two, three, four, five, six, seven, eight, and nine also count as valid "digits".
+
+Equipped with this new information, you now need to find the real first and last digit on each line. For example:
+
+two1nine
+eightwothree
+abcone2threexyz
+xtwone3four
+4nineeightseven2
+zoneight234
+7pqrstsixteen
+
+In this example, the calibration values are 29, 83, 13, 24, 42, 14, and 76. Adding these together produces 281.
+
+What is the sum of all of the calibration values?
+
+Your puzzle answer was 54728.
+
+Both parts of this puzzle are complete! They provide two gold stars: **
+
+### Commands-1
+
+1. Replace text digits into numerical expression
+	1. Replace 'one': ```:%s/one/1/g```
+	2. Replace 'two': ```:%s/two/2/g```
+	3. etc ...
+2. Repeat rest of steps in Q1.
+
+Problem: Edge case like 'threeight' can't be converted into '38'.
+
+### Commands-2
+
+1. Replace part of text digits into numerical expression
+	1. Replace 'one': ```:%s/one/o1ne/g```
+	2. Replace 'two': ```:%s/two/t2wo/g```
+	3. etc ...
+2. Repeat rest of steps in Q2.
 
