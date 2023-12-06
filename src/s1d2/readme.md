@@ -39,7 +39,7 @@ The first half of this puzzle is complete! It provides one gold star: *
 ### Command-1
 
 ```
-awk -f q1.awk origin.txt
+awk -f q1c1.awk origin.txt > q1c1_output.txt
 ```
 
 Output: 1867
