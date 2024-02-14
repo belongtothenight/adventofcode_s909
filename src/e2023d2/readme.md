@@ -1,4 +1,4 @@
-# Season 1 Day 2
+# Event 2023 Day 2
 
 ## Question-1
 

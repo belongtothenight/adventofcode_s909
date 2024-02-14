@@ -1,4 +1,4 @@
-# S1D1
+# Event 2023 Day 1
 
 ## Question-1
 
